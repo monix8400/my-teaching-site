@@ -1,0 +1,95 @@
+/* Desktop styles */
+@media (min-width: 801px) {
+  .logo {
+    display: flex;
+    align-content: center;
+    height: inherit;
+  }
+
+  .title {
+    padding: 10px;
+    margin: 0;
+    font-weight: bold; /* Adjust styles for the title */
+    font-family: "Sans Serif Collection", serif;
+    font-style: italic;
+    align-self: center;
+  }
+
+  .desktop-buttons {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    //flex: auto;
+    font-size: large;
+    margin-left: 3em;
+  }
+
+  .mobile-buttons {
+    display: none;
+  }
+
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toolbar-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 800px) {
+  .desktop-buttons {
+    display: none;
+  }
+
+  .mobile-buttons {
+    display: flex;
+  }
+
+  .logo {
+    display: flex;
+    align-content: center;
+    padding: 10px 0;
+    height: inherit;
+  }
+
+  .title {
+    padding: 10px;
+    margin: 0;
+    font-weight: bold; /* Adjust styles for the title */
+    font-family: "Sans Serif Collection", serif;
+    font-style: italic;
+    align-self: center;
+  }
+
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+  }
+
+  .toolbar-buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-mobile-buttons {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    width: auto;
+  }
+
+  .mobile-dropdown-menu {
+    display: flex;
+    width: auto;
+  }
+
+}

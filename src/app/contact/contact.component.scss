@@ -1,0 +1,25 @@
+.links{
+  display: flex;
+  justify-content: space-around;
+}
+.map{
+  width: 50%;
+}
+
+/* Desktop styles */
+@media (min-width: 801px) {
+  .address{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+/* Desktop styles */
+  @media (max-width: 800px) {
+    .address{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+}
+

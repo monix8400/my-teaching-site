@@ -1,0 +1,35 @@
+
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>
+      <mat-icon>mail</mat-icon>
+      E-mail</mat-card-title>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <mat-card-content>
+    <p>{{ email }}</p>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>
+      <mat-icon>location_on</mat-icon>
+      Address
+    </mat-card-title>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <mat-card-content>
+    <div class="address">
+    <p>{{ address }}</p>
+    <img class="map" src="assets/harta-fsega.png" alt="map">
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="card">
+  <mat-card-actions class="links">
+    <button mat-button><img ngSrc="assets/github.svg" alt="github-icon" height="20" width="20"></button>
+    <button mat-button><img ngSrc="assets/linkedin-1.svg" alt="linkedIn-icon" height="20" width="20"></button>
+  </mat-card-actions>
+</mat-card>

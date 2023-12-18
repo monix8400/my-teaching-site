@@ -1,0 +1,41 @@
+<mat-toolbar class="toolbar" color="primary">
+  <span class="logo">
+    <img class="uni-logo" src="assets/Logo_ubb_light_small.png" alt="university_logo">
+    <p class="title">{{ title }}</p>
+  </span>
+  <span class="spacer"></span>
+  <span class="toolbar-buttons">
+    <button mat-icon-button class="desktop-buttons" aria-label="home icon" (click)="goTo('home')">
+      <a>Home</a>
+    </button>
+    <button mat-icon-button class="desktop-buttons" aria-label="book icon" (click)="goTo('teaching')">
+      <a>Teaching</a>
+    </button>
+    <button mat-icon-button class="desktop-buttons" aria-label="person icon" (click)="goTo('about-me')">
+      <a>About Me</a>
+    </button>
+    <button mat-icon-button class="desktop-buttons" aria-label="phone icon" (click)="goTo('contact')">
+      <a>Contact</a>
+    </button>
+
+
+
+    <button class="mobile-buttons" mat-icon-button aria-label="menu icon" [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+      <mat-menu #menu="matMenu" xPosition="before" class="mobile-dropdown-menu">
+        <button mat-icon-button class="menu-mobile-buttons" aria-label="home icon" (click)="goTo('home')">
+          <a>Home</a>
+        </button>
+        <button mat-icon-button class="menu-mobile-buttons" aria-label="book icon" (click)="goTo('teaching')">
+          <a>Teaching</a>
+        </button>
+        <button mat-icon-button class="menu-mobile-buttons" aria-label="person icon" (click)="goTo('about-me')">
+          <a>About Me</a>
+        </button>
+        <button mat-icon-button class="menu-mobile-buttons" aria-label="phone icon" (click)="goTo('contact')">
+          <a>Contact</a>
+        </button>
+      </mat-menu>
+  </span>
+</mat-toolbar>
