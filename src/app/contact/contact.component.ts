@@ -25,4 +25,8 @@ import {GoogleMapsModule} from "@angular/google-maps";
 export class ContactComponent {
   email:string = `maria.soaita@stud.ubbcluj.ro`;
   address:string= 'Campus 406, Teodor Mihali Street, No.58-60, Cluj Napoca, Romania';
+
+  redirect(url:string) {
+    window.location.href = url;
+  }
 }

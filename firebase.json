@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "my-teaching-site",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

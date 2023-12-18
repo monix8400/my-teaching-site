@@ -28,7 +28,7 @@ export class NewsComponent {
     },
     {
       id: 2,
-      title: "It's time for exam dates to be decided.",
+      title: "Exam dates to be decided.",
       date: '28 Nov 2023',
       description: 'The time has come to set the exam dates so that I can reserve the rooms. '
     },

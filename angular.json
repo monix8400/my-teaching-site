@@ -96,6 +96,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "my-teaching-site:build:production",
+              "serveTarget": "my-teaching-site:serve:production"
+            },
+            "development": {
+              "buildTarget": "my-teaching-site:build:development",
+              "serveTarget": "my-teaching-site:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "my-teaching-site": {
+      "hosting": {
+        "my-teaching-site": [
+          "my-teaching-site"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "my-teaching-site"
+  }
+}
