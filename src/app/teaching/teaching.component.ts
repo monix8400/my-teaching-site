@@ -5,6 +5,8 @@ import {MatDividerModule} from "@angular/material/divider";
 import {MatIconModule} from "@angular/material/icon";
 import {NgOptimizedImage} from "@angular/common";
 import {MatSidenavModule} from "@angular/material/sidenav";
+import {RouterLink, RouterOutlet} from "@angular/router";
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 @Component({
   selector: 'teaching',
@@ -15,7 +17,10 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     MatDividerModule,
     MatIconModule,
     NgOptimizedImage,
-    MatSidenavModule
+    MatSidenavModule,
+    RouterLink,
+    RouterOutlet,
+    MatToolbarModule
   ],
   templateUrl: './teaching.component.html',
   styleUrl: './teaching.component.scss'

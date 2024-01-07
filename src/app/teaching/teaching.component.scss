@@ -1,1 +1,54 @@
+/* Desktop styles */
+@media (min-width: 801px) {
+  mat-sidenav-container {
+    background: #d9dcf0;
+    padding: 2em;
+  }
 
+  mat-sidenav{
+    background: #d9dcf0;
+  }
+
+  mat-toolbar{
+    height: 150px;
+    justify-content: center;
+    background: white;
+    border-bottom: 5px solid  #3f51b5;
+    font-weight: bold;
+    font-family: "Sans Serif Collection", serif;
+    font-style: italic;
+    font-size: xx-large;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 800px) {
+  mat-sidenav-container {
+    background: #d9dcf0;
+    padding: 1em;
+  }
+
+  mat-sidenav {
+    display: none;
+  }
+
+  mat-toolbar{
+    height: 100px;
+    justify-content: center;
+    background: white;
+    border-bottom: 3.5px solid  #3f51b5;
+    font-weight: bold;
+    font-family: "Sans Serif Collection", serif;
+    font-style: italic;
+    font-size: large;
+  }
+}
+h1, h2 {
+  margin: 0;
+  padding: 1em;
+}
+
+.no-decoration{
+   text-decoration: none ;
+    color: #ff4081;
+}

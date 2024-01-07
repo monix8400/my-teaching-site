@@ -18,7 +18,7 @@ import {Router} from "@angular/router";
   styleUrl: './toolbar.component.scss'
 })
 export class ToolbarComponent {
-  title = 'Șoaita Monica';
+  title = 'Șoaita M. Monica';
 
   constructor(private router: Router){
   }

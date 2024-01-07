@@ -1,42 +1,20 @@
+<mat-toolbar>
+  <span>Current Teaching</span>
+</mat-toolbar>
 
 <mat-sidenav-container>
   <mat-sidenav mode="side" opened>
-    <h1>Current teaching</h1>
-    <h2>Adaptive Web Design</h2>
+    <h1><a routerLink="." class="no-decoration">Current teaching</a></h1>
     <mat-divider></mat-divider>
-    <h2>Web Programming</h2>
+    <mat-divider></mat-divider>
+    <mat-divider></mat-divider>
+    <h2><a routerLink="awd" class="no-decoration">Adaptive Web Design</a></h2>
+    <mat-divider></mat-divider>
+    <h2><a routerLink="wp" class="no-decoration">Web Programming</a></h2>
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-card class="card">
-      <mat-card-header>
-        <mat-card-title>
-          Adaptive Web Design
-        </mat-card-title>
-        <mat-card-subtitle>
-          <p>Microsoft Teams code: <strong>xMknd1</strong></p>
-        </mat-card-subtitle>
-      </mat-card-header>
-      <mat-divider></mat-divider>
-      <mat-card-content>
-        <p></p>
-      </mat-card-content>
-    </mat-card>
-
-    <mat-card class="card">
-      <mat-card-header>
-        <mat-card-title>
-          Web Programming
-        </mat-card-title>
-        <mat-card-subtitle>
-          <p>Microsoft Teams code: <strong>jjhfMD</strong></p>
-        </mat-card-subtitle>
-      </mat-card-header>
-      <mat-divider></mat-divider>
-      <mat-card-content>
-        <p></p>
-      </mat-card-content>
-    </mat-card>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 
 </mat-sidenav-container>

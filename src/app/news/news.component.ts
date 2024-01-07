@@ -16,7 +16,7 @@ export class NewsComponent {
   newsList = [
     {
       id: 4,
-      title: 'Happy holidays.',
+      title: 'Happy holidays!',
       date: '20 Dec 2023',
       description: 'May your Christmas sparkle with moments of love, laughter, and goodwill, and may the New Year bring you joy, peace, and endless possibilities. Happy Holidays!🎄🎅🎁'
     },

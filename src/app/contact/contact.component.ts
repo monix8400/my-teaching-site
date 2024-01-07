@@ -6,6 +6,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {RouterOutlet} from "@angular/router";
 import {NgOptimizedImage} from "@angular/common";
 import {GoogleMapsModule} from "@angular/google-maps";
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 @Component({
   selector: 'contact',
@@ -17,7 +18,8 @@ import {GoogleMapsModule} from "@angular/google-maps";
     MatIconModule,
     RouterOutlet,
     NgOptimizedImage,
-    GoogleMapsModule
+    GoogleMapsModule,
+    MatToolbarModule
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'

@@ -1,3 +1,7 @@
+<mat-toolbar>
+  <span>Contact</span>
+</mat-toolbar>
+
 <mat-card class="card">
   <mat-card-header>
     <mat-card-title>
@@ -21,19 +25,27 @@
   <mat-divider></mat-divider>
   <mat-card-content>
     <div class="address">
-      <p>{{ address }}</p>
+      <p><strong>I'm available:</strong><br> Tuesday, 16:00 - 20:00, every week <br><br>
+        <strong>You can find me here:</strong> <br>{{ address }}
+      </p>
       <img class="map" src="assets/harta-fsega.png" alt="map">
     </div>
   </mat-card-content>
 </mat-card>
 
-<mat-card class="card">
-  <mat-card-actions class="links">
-    <button mat-button (click)="redirect('https://github.com/monix8400')">
-      <img ngSrc="assets/github.svg" alt="github-icon" height="20" width="20">
-    </button>
-    <button mat-button (click)="redirect('https://www.linkedin.com/in/soaita-m-monica')">
-      <img ngSrc="assets/linkedin-1.svg" alt="linkedIn-icon" height="20" width="20">
-    </button>
-  </mat-card-actions>
-</mat-card>
+<div class="action-buttons">
+  <mat-card class="card-action">
+    <mat-card-actions class="links">
+      <button mat-button (click)="redirect('https://github.com/monix8400')">
+        <img ngSrc="assets/github.svg" alt="github-icon" height="20" width="20">
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  <mat-card class="card-action">
+    <mat-card-actions class="links">
+      <button mat-button (click)="redirect('https://www.linkedin.com/in/soaita-m-monica')">
+        <img ngSrc="assets/linkedin-1.svg" alt="linkedIn-icon" height="20" width="20">
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
